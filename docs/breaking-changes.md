@@ -33,6 +33,21 @@ session.registerPreloadScript({
 })
 ```
 
+### Deprecated: `getFromVersionID` on `session.serviceWorkers`
+
+The `session.serviceWorkers.fromVersionID(versionId)` API has been deprecated
+in favor of `session.serviceWorkers.getInfoFromVersionID(versionId)`. This was
+changed to make it more clear which object is returned with the introduction
+of the `session.serviceWorkers.getWorkerFromVersionID(versionId)` API.
+
+```js
+// Deprecated
+session.serviceWorkers.fromVersionID(versionId)
+
+// Replace with
+session.serviceWorkers.getInfoFromVersionID(versionId)
+```
+
 ### Deprecated: `level`, `message`, `line`, and `sourceId` arguments in `console-message` event on `WebContents`
 
 The `console-message` event on `WebContents` has been updated to provide details on the `Event`
