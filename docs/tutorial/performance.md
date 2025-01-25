@@ -399,7 +399,7 @@ control over how resources are being loaded, consider investing in
 ### 7. Bundle your code
 
 As already pointed out in
-"[Loading and running code too soon](#2-avoid-loading-and-running-code-too-soon)",
+"[Avoid loading and running code too soon](#2-avoid-loading-and-running-code-too-soon)",
 calling `require()` is an expensive operation. If you are able to do so,
 bundle your application's code into a single file.
 
